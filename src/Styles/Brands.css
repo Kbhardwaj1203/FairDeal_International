@@ -1,0 +1,135 @@
+.brands-container {
+  padding-top: 70px;
+}
+
+.brands-hero {
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.brands-intro {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.brands-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.brands-intro p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.brand-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.brand-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.brand-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.brand-content {
+  flex: 1;
+}
+
+.brand-content h2 {
+  font-size: 2.5rem;
+  color: rgba(37, 54, 74, 1);
+  margin-bottom: 1.5rem;
+}
+
+.brand-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.brand-features {
+  display: flex;
+  gap: 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  line-height: 1;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  color: #1976D2;
+}
+
+.feature span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.brands-hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.brands-hero p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .brands-hero {
+    height: 40vh;
+  }
+  .brand-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+  .brand-section.reverse {
+    flex-direction: column;
+  }
+  .brand-features {
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .brand-content h2 {
+    font-size: 2rem;
+  }
+  .brands-hero h1 {
+    font-size: 2rem;
+  }
+  .brands-hero p {
+    font-size: 1.2rem;
+  }
+} 
