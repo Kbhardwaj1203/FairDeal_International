@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(37, 54, 74, 1); /* Deep blue-gray */
-  padding: 1.25rem 3rem;
+  background: rgba(37, 54, 74, 1); 
+  padding: 0.5rem 3rem;
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   width: 100vw;
@@ -30,7 +30,7 @@
   display: block;
   margin: 0;
   padding: 0.25rem;
-  height: 72px;
+  height: 62px;
   background: #fff;
   border-radius: 8px;
 }

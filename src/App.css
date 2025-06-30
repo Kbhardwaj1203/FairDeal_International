@@ -5,7 +5,8 @@
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 }
 
-body {
+body, html {
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 }
