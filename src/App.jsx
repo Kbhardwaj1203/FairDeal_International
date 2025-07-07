@@ -18,25 +18,25 @@ const App = () => {
       once: true,
     });
     // Disable right-click
-    const handleContextMenu = (e) => e.preventDefault();
-    document.addEventListener('contextmenu', handleContextMenu);
-    // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
-    const handleKeyDown = (e) => {
-      if (
-        e.key === 'F12' ||
-        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
-        (e.ctrlKey && e.key === 'U')
-      ) {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-      }
-    };
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
+    // const handleContextMenu = (e) => e.preventDefault();
+    // document.addEventListener('contextmenu', handleContextMenu);
+    // // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+    // const handleKeyDown = (e) => {
+    //   if (
+    //     e.key === 'F12' ||
+    //     (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+    //     (e.ctrlKey && e.key === 'U')
+    //   ) {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     return false;
+    //   }
+    // };
+    // document.addEventListener('keydown', handleKeyDown);
+    // return () => {
+    //   document.removeEventListener('contextmenu', handleContextMenu);
+    //   document.removeEventListener('keydown', handleKeyDown);
+    // };
   }, []);
 
   return (
