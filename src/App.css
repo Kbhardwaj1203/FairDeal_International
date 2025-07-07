@@ -9,4 +9,5 @@ body, html {
   overflow-x: hidden;
   margin: 0;
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  scroll-behavior: smooth;
 }

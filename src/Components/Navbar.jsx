@@ -17,9 +17,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <NavLink to="/">
+        <a href="#home">
           <img src={logo} alt="FairDeal Logo" className="logo-image" />
-        </NavLink>
+        </a>
       </div>
       <div
         className={`hamburger ${menuOpen ? 'open' : ''}`}
@@ -33,13 +33,13 @@ const Navbar = () => {
         <span />
       </div>
       <ul className={`navbar-links${menuOpen ? ' open' : ''}`}>
-        <li><NavLink to="/about-us" className="nav-link" onClick={handleNavLinkClick}>About Us</NavLink></li>
+        <li><a href="#aboutus" className="nav-link" onClick={handleNavLinkClick}>About Us</a></li>
         <li className="nav-divider" aria-hidden="true"></li>
-        <li><NavLink to="/brands" className="nav-link" onClick={handleNavLinkClick}>Brands</NavLink></li>
+        <li><a href="#brands" className="nav-link" onClick={handleNavLinkClick}>Brands</a></li>
         <li className="nav-divider" aria-hidden="true"></li>
-        <li><NavLink to="/faq" className="nav-link" onClick={handleNavLinkClick}>FAQ</NavLink></li>
+        <li><a href="#faq" className="nav-link" onClick={handleNavLinkClick}>FAQ</a></li>
         <li className="nav-divider" aria-hidden="true"></li>
-        <li><NavLink to="/contact-us" className="nav-link" onClick={handleNavLinkClick}>Contact Us</NavLink></li>
+        <li><a href="#contactus" className="nav-link" onClick={handleNavLinkClick}>Contact Us</a></li>
       </ul>
     </nav>
   );

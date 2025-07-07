@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/Home.css';
 import WhyChooseUs from './WhyChooseUs';
+import AboutUs from './AboutUs';
+import Brands from './Brands';
+import FAQ from './FAQ';
+import ContactUs from './ContactUs';
 import img1 from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
@@ -44,6 +48,18 @@ const Home = () => {
         </div>
       </div>
       <WhyChooseUs />
+      <section id="aboutus">
+        <AboutUs />
+      </section>
+      <section id="brands">
+        <Brands />
+      </section>
+      <section id="faq">
+        <FAQ />
+      </section>
+      <section id="contactus">
+        <ContactUs />
+      </section>
     </>
   );
 };

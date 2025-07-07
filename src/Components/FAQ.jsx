@@ -49,11 +49,12 @@ const FAQ = () => {
 
   return (
     <div className="faq-container">
-      <section className="faq-hero" style={{ backgroundImage: `url(${faqBanner})` }}>
+      {/* <section className="faq-hero" style={{ backgroundImage: `url(${faqBanner})` }}>
         <div className="faq-hero-overlay" data-aos="fade-down">
           <h1>Frequently Asked Questions</h1>
         </div>
-      </section>
+      </section> */}
+      <h1 className='faq'>Frequently Asked Questions</h1>
       <div className="faq-list">
         {faqData.map((item, idx) => (
           <div className={`faq-item${openIndex === idx ? ' open' : ''}`} key={idx}>
